@@ -5,6 +5,7 @@ import adminRoutes from './admin-route';
 import PublicRouter from './components/public-route';
 
 import { ROUTE_PATH } from '@constants';
+import SignIn from '@pages/sign-in';
 
 const routes = (): RouteObject[] => {
    return [
@@ -16,7 +17,7 @@ const routes = (): RouteObject[] => {
          path: ROUTE_PATH.SIGN_IN,
          element: (
             <PublicRouter>
-               <>Trang đăng nhập</>
+               <SignIn />
             </PublicRouter>
          ),
       },
