@@ -1,3 +1,3 @@
-export * from './page';
+export * from './route-path';
 
 export * from './language';

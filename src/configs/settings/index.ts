@@ -1,10 +1,11 @@
-import { PAGE, type Language, type Page, LANGUAGE } from '@constants';
+import { ROUTE_PATH, type Language, LANGUAGE, type RoutePath } from '@constants';
 
 type SettingConfig = {
    FALLBACK_LANGUAGE: Language;
-   SIGN_IN_REDIRECT_URL: Page;
-   SIGN_OUT_REDIRECT_URL: Page;
-   UNAUTHORIZED_REDIRECT_URL: Page;
+   SIGN_IN_REDIRECT_URL_ADMIN: RoutePath;
+   SIGN_IN_REDIRECT_URL_CLIENT: RoutePath;
+   SIGN_OUT_REDIRECT_URL: RoutePath;
+   UNAUTHORIZED_REDIRECT_URL: RoutePath;
    REDIRECT_URL_KEY: string;
    ACCESS_TOKEN_KEY: string;
    REFRESH_TOKEN_KEY: string;
@@ -19,17 +20,19 @@ export const SETTINGS_CONFIG: SettingConfig = {
    /**
     * The URL to redirect to after a successful sign-in.
     */
-   SIGN_IN_REDIRECT_URL: PAGE.HOME,
+   SIGN_IN_REDIRECT_URL_CLIENT: ROUTE_PATH.CLIENT_HOME,
+
+   SIGN_IN_REDIRECT_URL_ADMIN: ROUTE_PATH.ADMIN_HOME,
 
    /**
     * The URL to redirect to after a successful sign-out.
     */
-   SIGN_OUT_REDIRECT_URL: PAGE.HOME,
+   SIGN_OUT_REDIRECT_URL: ROUTE_PATH.CLIENT_HOME,
 
    /**
     * The URL to redirect to when a user is not authorized
     */
-   UNAUTHORIZED_REDIRECT_URL: PAGE.SIGN_IN,
+   UNAUTHORIZED_REDIRECT_URL: ROUTE_PATH.SIGN_IN,
 
    /**
     * The key used to store the redirect URL in local storage.
