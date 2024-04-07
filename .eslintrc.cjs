@@ -47,7 +47,7 @@ module.exports = {
          },
       },
       {
-         files: ['.eslintrc.cjs'],
+         files: ['.eslintrc.cjs', 'tailwind.config.ts'],
          rules: {
             'prettier/prettier': 'off',
          },

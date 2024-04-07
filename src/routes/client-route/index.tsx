@@ -1,6 +1,11 @@
 import { Outlet, type RouteObject } from 'react-router-dom';
 
 import { ROUTE_PATH } from '@constants';
+import { HomeClient } from '@pages/clients';
+
+/**
+ *  Purchase page link for users
+ */
 
 const clientRoutes: RouteObject = {
    path: ROUTE_PATH.CLIENT_HOME,
@@ -8,7 +13,7 @@ const clientRoutes: RouteObject = {
    children: [
       {
          index: true,
-         element: <>Trang chủ người dùng</>,
+         element: <HomeClient />,
       },
    ],
 };

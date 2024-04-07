@@ -11,6 +11,8 @@ type SettingConfig = {
    REFRESH_TOKEN_KEY: string;
 };
 
+const { VITE_ACCESS_TOKEN_KEY, VITE_REFRESH_TOKEN_KEY } = process.env;
+
 export const SETTINGS_CONFIG: SettingConfig = {
    /**
     * The fallback language to use in case the user's preferred language is not available.
@@ -42,10 +44,10 @@ export const SETTINGS_CONFIG: SettingConfig = {
    /**
     * The key used to store the access token in local storage.
     */
-   ACCESS_TOKEN_KEY: import.meta.env.VITE_ACCESS_TOKEN_KEY as string,
+   ACCESS_TOKEN_KEY: VITE_ACCESS_TOKEN_KEY as string,
 
    /**
     * The key used to store the refresh token in local storage.
     */
-   REFRESH_TOKEN_KEY: import.meta.env.VITE_REFRESH_TOKEN_KEY as string,
+   REFRESH_TOKEN_KEY: VITE_REFRESH_TOKEN_KEY as string,
 };
