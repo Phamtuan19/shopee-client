@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-floating-promises */
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { I18nextProvider } from 'react-i18next';
@@ -12,7 +11,7 @@ import App from '@pages';
 import { LANGUAGE } from '@constants';
 import { resources } from '@language';
 
-i18next.init({
+void i18next.init({
    resources,
    interpolation: { escapeValue: false },
    lng: LANGUAGE.VI,

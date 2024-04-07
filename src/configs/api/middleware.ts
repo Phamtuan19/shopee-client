@@ -1,7 +1,9 @@
 import { type InternalAxiosRequestConfig } from 'axios';
 
+const { VITE_ACCESS_TOKEN_KEY } = process.env;
+
 const middleware = <T>(requestConfig: InternalAxiosRequestConfig<T>) => {
-   const authToken = localStorage.getItem(import.meta.env.VITE_ACCESS_TOKEN_KEY as string);
+   const authToken = localStorage.getItem(VITE_ACCESS_TOKEN_KEY as string);
 
    if (authToken) {
       requestConfig.headers.Authorization = `Bearer ${authToken}`;
