@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 
-const useSearchParamsHook = () => {
+export const useSearchParamsHook = () => {
    const [searchParams, setSearchParams] = useSearchParams();
 
    const params = Object.fromEntries([...searchParams]);
@@ -23,5 +23,3 @@ const useSearchParamsHook = () => {
       deleteParams,
    };
 };
-
-export default useSearchParamsHook;

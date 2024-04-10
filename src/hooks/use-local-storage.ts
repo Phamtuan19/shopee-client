@@ -4,7 +4,7 @@ interface UseLocalStorageType<T> {
    data: NonNullableData<T>;
 }
 
-const useLocalStorage = () => {
+export const useLocalStorage = () => {
    const getLocalStorage = (key: string) => {
       try {
          const value: string | null = localStorage.getItem(key);
@@ -28,5 +28,3 @@ const useLocalStorage = () => {
 
    return { getLocalStorage, setLocalStorage };
 };
-
-export default useLocalStorage;
