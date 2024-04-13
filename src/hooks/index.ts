@@ -9,3 +9,5 @@ export * from './use-search-param-hook';
 export * from './use-svg-icon';
 
 export * from './use-scroll-to-top';
+
+export * from './use-window-event';

@@ -3,9 +3,9 @@
 import { type Config } from 'tailwindcss';
 
 const config: Config = {
-   darkMode: ['class'],
+   content: ['./src/**/*.{ts,tsx}'],
 
-   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
+   darkMode: ['class'],
 
    plugins: [require('tailwindcss-animate')],
 
@@ -19,6 +19,12 @@ const config: Config = {
       },
 
       extend: {
+         borderRadius: {
+            // lg: 'var(--radius)',
+            // md: 'calc(var(--radius) - 2px)',
+            // sm: 'calc(var(--radius) - 4px)',
+         },
+
          height: {
             'header-client': '85px',
          },
@@ -72,11 +78,6 @@ const config: Config = {
                '0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)',
          },
 
-         borderRadius: {
-            lg: 'var(--radius)',
-            md: 'calc(var(--radius) - 2px)',
-            sm: 'calc(var(--radius) - 4px)',
-         },
          keyframes: {
             'accordion-down': {
                from: { height: '0' },
@@ -87,6 +88,7 @@ const config: Config = {
                to: { height: '0' },
             },
          },
+
          animation: {
             'accordion-down': 'accordion-down 0.2s ease-out',
             'accordion-up': 'accordion-up 0.2s ease-out',
