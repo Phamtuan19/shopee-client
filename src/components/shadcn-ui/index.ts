@@ -11,3 +11,5 @@ export * from './stack';
 export * from './select';
 
 export * from './accordion';
+
+export * from './alert-dialog';
