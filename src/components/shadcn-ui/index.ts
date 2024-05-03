@@ -13,3 +13,5 @@ export * from './select';
 export * from './accordion';
 
 export * from './alert-dialog';
+
+export * from './check-box';

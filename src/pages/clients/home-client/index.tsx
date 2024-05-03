@@ -14,6 +14,7 @@ import {
    AlertDialogTrigger,
    Avatar,
    Button,
+   Checkbox,
    HeaderClient,
    InputPassword,
    Select,
@@ -84,6 +85,8 @@ export const HomeClient = () => {
                </AlertDialogFooter>
             </AlertDialogContent>
          </AlertDialog>
+
+         <Checkbox />
       </div>
    );
 };
