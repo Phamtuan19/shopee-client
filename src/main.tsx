@@ -13,12 +13,15 @@ import { store } from './redux';
 import { LANGUAGE } from '@constants';
 import { resources } from '@language';
 import Routers from '~/routes';
+import { initApp } from '@helpers';
 
 void i18next.init({
    resources,
    interpolation: { escapeValue: false },
    lng: LANGUAGE.VI,
 });
+
+initApp();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
    <React.Fragment>
