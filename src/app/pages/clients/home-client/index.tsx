@@ -15,7 +15,6 @@ import {
    Avatar,
    Button,
    Checkbox,
-   HeaderClient,
    InputPassword,
    Select,
    SelectContent,
@@ -23,11 +22,12 @@ import {
    SelectTrigger,
    SelectValue,
 } from '@components';
+import { LayoutClient } from '@layout';
 
 export const HomeClient = () => {
    return (
       <div>
-         <HeaderClient />
+         <LayoutClient />
 
          <Button className="rounded-lg">Click Me!!!</Button>
 

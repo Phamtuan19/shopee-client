@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 import { MenuHeader } from './component/menu-header';
 
-import { LazyLoadingImage } from '~/app/components';
-import { ROUTE_PATH } from '~/app/constants';
+import { LazyLoadingImage } from '@components';
+import { ROUTE_PATH } from '@constants';
 
 const LOGO = 'https://5sfashion.vn/storage/upload/images/logo/logo.png';
 

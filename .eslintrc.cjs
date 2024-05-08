@@ -73,6 +73,8 @@ module.exports = {
                { pattern: '@pages/**', group: 'internal' },
                { pattern: '@language', group: 'internal' },
                { pattern: '@language/**', group: 'internal' },
+               { pattern: '@layout', group: 'internal' },
+               { pattern: '@layout/**', group: 'internal' },
             ],
             pathGroupsExcludedImportTypes: ['builtin'],
             groups: [['builtin', 'external'], ['internal'], ['parent', 'sibling', 'index'], 'unknown'],
