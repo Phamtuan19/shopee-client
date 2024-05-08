@@ -8,12 +8,12 @@ import { Provider } from 'react-redux';
 import './styles/global.css';
 import { BrowserRouter } from 'react-router-dom';
 
-import { store } from './redux';
+import { store } from './app/redux';
 
-import { LANGUAGE } from '@constants';
+import { LANGUAGE } from '~/app/constants';
 import { resources } from '@language';
-import Routers from '~/routes';
-import { initApp } from '@helpers';
+import Routers from '~/app/routes';
+import { initApp } from '~/app/helpers';
 
 void i18next.init({
    resources,

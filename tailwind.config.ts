@@ -10,11 +10,20 @@ const config: Config = {
    plugins: [require('tailwindcss-animate')],
 
    theme: {
+      screens: {
+         sm: '640px',
+         md: '768px',
+         lg: '1024px',
+         xl: '1280px',
+         '2xl': '1536px',
+      },
+
       container: {
          center: true,
-         padding: '2rem',
-         screens: {
-            '2xl': '1400px',
+         padding: {
+            lg: '2rem',
+            md: '1.5rem',
+            sm: '1rem',
          },
       },
 
@@ -26,7 +35,7 @@ const config: Config = {
          },
 
          height: {
-            'header-client': '85px',
+            'header-client': '58px',
          },
 
          padding: {
@@ -76,6 +85,7 @@ const config: Config = {
          boxShadow: {
             button:
                '0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)',
+            'header-client': '0 4px 4px rgba(0,0,0,.05)',
          },
 
          keyframes: {
