@@ -9,7 +9,7 @@ const LOGO = 'https://5sfashion.vn/storage/upload/images/logo/logo.png';
 
 const data = [
    {
-      name: 'Sale',
+      name: 'Quần Short Kaki Nam 5S Fashion',
    },
    {
       name: 'Áo Nam',
