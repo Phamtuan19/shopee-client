@@ -20,3 +20,30 @@
    height: 100%;
    object-fit: cover;
 }
+
+.swiper-button-next {
+   right: 0 !important;
+   width: 32px !important;
+   height: 48px !important;
+   background: rgb(0 0 0 / 20%);
+   display: none !important;
+}
+
+.swiper-button-prev {
+   left: 0 !important;
+   width: 32px !important;
+   height: 48px !important;
+   background: rgb(0 0 0 / 20%);
+   display: none !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+   font-size: 28px !important;
+   color: #fff;
+}
+
+.swiper:hover > .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+   display: flex !important;
+}

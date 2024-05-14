@@ -1,8 +1,9 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -15,8 +16,8 @@ const image = [
 export const BannerSliderWithThumbnails = () => {
    return (
       <Swiper
-         centeredSlides={true}
          navigation={true}
+         centeredSlides={true}
          autoplay={{
             delay: 5000,
             disableOnInteraction: false,
@@ -24,7 +25,7 @@ export const BannerSliderWithThumbnails = () => {
          pagination={{
             clickable: true,
          }}
-         modules={[Autoplay, Pagination]}
+         modules={[Autoplay, Navigation, Pagination]}
          className="mySwiper  rounded-md"
       >
          {image.map((item) => (
