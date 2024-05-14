@@ -2,7 +2,7 @@ import { Slider } from '@components';
 
 export const HomeClient = () => {
    return (
-      <div>
+      <>
          <Slider />
 
          {/* <Button className="rounded-lg">Click Me!!!</Button>
@@ -63,6 +63,6 @@ export const HomeClient = () => {
          </AlertDialog>
 
          <Checkbox /> */}
-      </div>
+      </>
    );
 };

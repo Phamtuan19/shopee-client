@@ -5,7 +5,7 @@ import '../../../../styles/global.css';
 
 export const Slider = () => {
    return (
-      <div className="container grid grid-cols-6 gap-1 mt-4 max-h-[100px]">
+      <div className="container grid grid-cols-6 gap-1 mt-4 h-full">
          <div className="col-span-4">
             <BannerSliderWithThumbnails />
          </div>

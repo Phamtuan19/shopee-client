@@ -15,3 +15,9 @@ export * from './accordion';
 export * from './alert-dialog';
 
 export * from './check-box';
+
+export * from './drawer';
+
+export * from './sheet';
+
+export * from './dropdown-menu';

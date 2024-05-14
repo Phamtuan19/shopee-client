@@ -10,20 +10,31 @@ const config: Config = {
    plugins: [require('tailwindcss-animate')],
 
    theme: {
-      screens: {
-         sm: '640px',
-         md: '768px',
-         lg: '1024px',
-         xl: '1280px',
-         '2xl': '1536px',
-      },
+      // screens: {
+      //    sm: '640px',
+      //    md: '768px',
+      //    lg: '1024px',
+      //    xl: '1280px',
+      //    '2xl': '1536px',
+      // },
+
+      // container: {
+      //    center: true,
+      //    padding: {
+      //       lg: '2rem',
+      //       md: '1.5rem',
+      //       sm: '1rem',
+      //    },
+      // },
 
       container: {
-         center: true,
-         padding: {
-            lg: '2rem',
-            md: '1.5rem',
-            sm: '1rem',
+         center: true, // Centers the container by adding auto margins
+         padding: '1rem', // Default padding for the container
+         screens: {
+            sm: '100%', // Width for small screens
+            md: '100%', // Width for medium screens
+            lg: '1024px', // Width for large screens
+            xl: '1280px', // Width for extra-large screens
          },
       },
 

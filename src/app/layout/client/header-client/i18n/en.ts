@@ -3,6 +3,7 @@ const locale = {
    PROFILE: 'Profile',
    SIGNIN: 'Sign in',
    REGISTER: 'register',
+   ACCOUNT: 'Account',
 };
 
 export default locale;
