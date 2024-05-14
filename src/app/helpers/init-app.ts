@@ -1,4 +1,17 @@
+// import { useTranslation } from 'react-i18next';
+
+// import { LOCALSTORAGE_LANGUAGE_KEY } from '@constants';
+// import { useLocalStorage } from '@hooks';
+
 export const initApp = () => {
+   // const { getLocalStorage } = useLocalStorage();
+
+   // const language = getLocalStorage(LOCALSTORAGE_LANGUAGE_KEY);
+
+   // if (language) {
+   //    useTranslation(language as string);
+   // }
+
    // const { getLocalStorage } = useLocalStorage();
 
    // const logo = getLocalStorage('logo');

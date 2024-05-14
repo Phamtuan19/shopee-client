@@ -22,3 +22,5 @@ export const LanguageSchema = yup.string().oneOf(Object.values(LANGUAGE)).requir
  * Represents the inferred type of the `LanguageSchema`.
  */
 export type Language = yup.InferType<typeof LanguageSchema>;
+
+export const LOCALSTORAGE_LANGUAGE_KEY = 'language';

@@ -1,8 +1,4 @@
 /* eslint-disable no-console */
-interface UseLocalStorageType<T> {
-   key: string;
-   data: NonNullableData<T>;
-}
 
 export const useLocalStorage = () => {
    const getLocalStorage = (key: string) => {
@@ -14,9 +10,8 @@ export const useLocalStorage = () => {
       }
    };
 
-   const setLocalStorage = <T>(props: UseLocalStorageType<T>) => {
+   const setLocalStorage = <T>(key: string, data: T) => {
       try {
-         const { key, data } = props;
          if (import.meta.env.VITE_AUTH_TOKEN === key) {
             return localStorage.setItem(key, data as string);
          }
