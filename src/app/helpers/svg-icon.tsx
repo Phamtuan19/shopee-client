@@ -7,7 +7,7 @@ type SvgIconProps = ComponentProps<'svg'> & {
 };
 
 export const SvgIcon = ({ name, ...props }: SvgIconProps) => {
-   const { error, isLoading, Icon } = useSvgIcon(name);
+   const { error, isLoading, Icon } = useSvgIcon(name.trim());
 
    const width = props.width ? +props.width : 10;
    const height = props.height ? +props.height : 10;

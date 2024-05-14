@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Link } from 'react-router-dom';
 
@@ -13,12 +15,24 @@ export const MenuHeader = ({ data }: MenuHeaderProps) => {
    const { name, subMenu } = data;
 
    return (
-      <div className="relative group">
-         <Link to={ROUTE_PATH.CLIENT_PRODUCT} className="flex items-center gap-2 cursor-pointer">
-            <p className="font-bold">{name}</p>
+      <div className="relative h-full flex items-center group">
+         <Link to={ROUTE_PATH.CLIENT_PRODUCT} className="flex items-center gap-2 cursor-pointer ">
+            <p className="font-medium group-hover:text-active hover:text-active text-black">{name}</p>
             {subMenu && <SvgIcon name="down-chevron" className="w-3 h-3" />}
          </Link>
-         <div className="absolute top-full container bg-black h-20 hidden group-hover:block min-w-[400px] -left-10"></div>
+         {subMenu && (
+            <div className="z-10 shadow-submenu p-6 absolute rounded-b-md top-[99%] hidden group-hover:block bg-white m-h-20  min-w-[400px] -left-10">
+               <div className="flex flex-col gap-y-2">
+                  {subMenu.map((item: any, index: number) => (
+                     <div key={index} className="">
+                        <Link to="/" className="hover:text-active">
+                           {item.name}
+                        </Link>
+                     </div>
+                  ))}
+               </div>
+            </div>
+         )}
       </div>
    );
 };
