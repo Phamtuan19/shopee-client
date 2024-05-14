@@ -47,6 +47,10 @@ const config: Config = {
          colors: {
             // background: '#f6f6f6',
 
+            black: '#232734',
+
+            active: '#bd0000',
+
             border: 'hsl(var(--border))',
             input: 'hsl(var(--input))',
             ring: 'hsl(var(--ring))',
@@ -86,6 +90,7 @@ const config: Config = {
             button:
                '0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12)',
             'header-client': '0 4px 4px rgba(0,0,0,.05)',
+            submenu: '0 4px 10px rgba(0,0,0,.1)',
          },
 
          keyframes: {

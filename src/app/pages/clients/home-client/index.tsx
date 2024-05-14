@@ -1,35 +1,11 @@
-import {
-   Accordion,
-   AccordionContent,
-   AccordionItem,
-   AccordionTrigger,
-   AlertDialog,
-   AlertDialogAction,
-   AlertDialogCancel,
-   AlertDialogContent,
-   AlertDialogDescription,
-   AlertDialogFooter,
-   AlertDialogHeader,
-   AlertDialogTitle,
-   AlertDialogTrigger,
-   Avatar,
-   Button,
-   Checkbox,
-   HeaderClient,
-   InputPassword,
-   Select,
-   SelectContent,
-   SelectItem,
-   SelectTrigger,
-   SelectValue,
-} from '@components';
+import { LayoutClient } from '@layout';
 
 export const HomeClient = () => {
    return (
       <div>
-         <HeaderClient />
+         <LayoutClient />
 
-         <Button className="rounded-lg">Click Me!!!</Button>
+         {/* <Button className="rounded-lg">Click Me!!!</Button>
 
          <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEBqYEUHs9SPync2bo8AmdYjzW5WYicOWF8lreCXnMcQ&s" />
 
@@ -86,7 +62,7 @@ export const HomeClient = () => {
             </AlertDialogContent>
          </AlertDialog>
 
-         <Checkbox />
+         <Checkbox /> */}
       </div>
    );
 };
