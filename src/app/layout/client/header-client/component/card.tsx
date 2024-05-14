@@ -5,7 +5,7 @@ export const Card = () => {
    return (
       <div className="relative max-w-max h-full flex items-center  group">
          <div className="cursor-pointer">
-            <SvgIcon name="cart" width="29" height="29" />
+            <SvgIcon name="cart" width="22" height="22" />
          </div>
          <div className="top-card-content rounded-md absolute w-[400px] -right-10 top-[92%] h-[400px] z-10 hidden group-hover:block shadow-card bg-white">
             <div className="px-3 py-4 flex flex-col gap-y-3">
