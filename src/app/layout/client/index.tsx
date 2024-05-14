@@ -1,5 +1,10 @@
 import { HeaderClient } from './header-client';
 
-export const LayoutClient = () => {
-   return <HeaderClient />;
+export const LayoutClient = ({ children }: { children: React.ReactNode }) => {
+   return (
+      <>
+         <HeaderClient />
+         {children}
+      </>
+   );
 };

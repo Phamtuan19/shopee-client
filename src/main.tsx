@@ -6,19 +6,23 @@ import i18next from 'i18next';
 import { Provider } from 'react-redux';
 
 import './styles/global.css';
-import { BrowserRouter } from 'react-router-dom';
 
 import { store } from './app/redux';
 
-import { LANGUAGE } from '~/app/constants';
 import { resources } from '@language';
-import Routers from '~/app/routes';
+
 import { initApp } from '~/app/helpers';
+import App from './app';
+import { LANGUAGE, LOCALSTORAGE_LANGUAGE_KEY } from '@constants';
 
 void i18next.init({
    resources,
    interpolation: { escapeValue: false },
-   lng: LANGUAGE.VI,
+   lng: localStorage.getItem(LOCALSTORAGE_LANGUAGE_KEY)
+      ? localStorage.getItem(LOCALSTORAGE_LANGUAGE_KEY) === LANGUAGE.VI
+         ? LANGUAGE.VI
+         : LANGUAGE.EN
+      : LANGUAGE.VI,
 });
 
 initApp();
@@ -27,9 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
    <React.Fragment>
       <Provider store={store}>
          <I18nextProvider i18n={i18next}>
-            <BrowserRouter>
-               <Routers />
-            </BrowserRouter>
+            <App />
          </I18nextProvider>
       </Provider>
    </React.Fragment>,

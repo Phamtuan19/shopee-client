@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-import type { Language } from '@constants';
+import { type Language } from '@constants';
 
 type LanguagesProps = {
    locales?: {

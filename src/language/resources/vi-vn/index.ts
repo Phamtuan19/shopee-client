@@ -3,7 +3,7 @@ const vi_vn = {
    home: 'Trang chủ',
    COUNTRY_EN: 'English',
    COUNTRY_VI: 'Việt Nam',
-   FLAG: 'EN',
+   FLAG: 'VI',
 };
 
 export default vi_vn;
