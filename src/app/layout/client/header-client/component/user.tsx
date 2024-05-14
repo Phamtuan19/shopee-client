@@ -29,7 +29,7 @@ export const User = () => {
             </>
          ) : (
             <>
-               <SvgIcon name="user" width="29" height="29" />
+               <SvgIcon name="user" width="24" height="24" />
 
                <div
                   className="header-user hidden group-hover:block  absolute z-10 bg-white rounded-md right-0 top-[92%]"
