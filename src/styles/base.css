@@ -69,3 +69,12 @@ body {
    -webkit-font-smoothing: auto;
    -moz-osx-font-smoothing: auto;
 }
+
+#root {
+   height: 100vh;
+}
+
+img,
+svg {
+   vertical-align: middle;
+}
