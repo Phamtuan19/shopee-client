@@ -14,24 +14,29 @@ const AccordionItem = React.forwardRef<
 ));
 AccordionItem.displayName = 'AccordionItem';
 
-const AccordionTrigger = React.forwardRef<
-   React.ElementRef<typeof AccordionPrimitive.Trigger>,
-   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
-   <AccordionPrimitive.Header className="flex">
-      <AccordionPrimitive.Trigger
-         ref={ref}
-         className={cn(
-            'flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
-            className,
-         )}
-         {...props}
-      >
-         {children}
-         <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
-      </AccordionPrimitive.Trigger>
-   </AccordionPrimitive.Header>
-));
+interface AccordionTriggerProps extends React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> {
+   isIcon?: boolean;
+}
+
+const AccordionTrigger = React.forwardRef<React.ElementRef<typeof AccordionPrimitive.Trigger>, AccordionTriggerProps>(
+   ({ className, children, isIcon = true, ...props }, ref) => (
+      <AccordionPrimitive.Header className="flex">
+         <AccordionPrimitive.Trigger
+            ref={ref}
+            className={cn(
+               'flex flex-1 items-center justify-between py-4 text-sm font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
+               className,
+            )}
+            {...props}
+         >
+            {children}
+            {isIcon && (
+               <ChevronDownIcon className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200" />
+            )}
+         </AccordionPrimitive.Trigger>
+      </AccordionPrimitive.Header>
+   ),
+);
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<

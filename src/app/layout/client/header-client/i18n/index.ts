@@ -4,7 +4,7 @@ import vi from './vi';
 import { LANGUAGE } from '@constants';
 
 export default {
-   name: 'header',
+   name: 'HEADER',
    locales: [
       {
          key: LANGUAGE.EN,
