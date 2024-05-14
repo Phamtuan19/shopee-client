@@ -2,7 +2,7 @@ import languages from '../i18n';
 
 import { SvgIcon } from '@helpers';
 import { Avatar } from '@components';
-import useI18n from '@hooks/use-i18n';
+import { useI18n } from '@hooks';
 
 export const User = () => {
    const translate = useI18n(languages);

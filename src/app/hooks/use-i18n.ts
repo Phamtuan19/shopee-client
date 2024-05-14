@@ -11,7 +11,7 @@ type LanguagesProps = {
    name?: string;
 };
 
-const useI18n = (languages?: LanguagesProps | string) => {
+export const useI18n = (languages?: LanguagesProps | string) => {
    const { name = 'translation', locales } =
       typeof languages === 'object' ? languages : { name: languages, locales: null };
 
@@ -25,5 +25,3 @@ const useI18n = (languages?: LanguagesProps | string) => {
 
    return t;
 };
-
-export default useI18n;
