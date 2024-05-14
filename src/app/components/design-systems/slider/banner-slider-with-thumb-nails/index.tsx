@@ -28,8 +28,8 @@ export const BannerSliderWithThumbnails = () => {
          modules={[Autoplay, Navigation, Pagination]}
          className="mySwiper  rounded-md"
       >
-         {image.map((item) => (
-            <SwiperSlide className="bg-transparent text-white">
+         {image.map((item, index) => (
+            <SwiperSlide className="bg-transparent text-white" key={index}>
                <Link to="/">
                   <LazyLoadImage src={item} alt="" className="rounded-md object-fill w-full h-full" />
                </Link>
