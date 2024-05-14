@@ -1,9 +1,11 @@
-import { Slider } from '@components';
+import { DiscountCode, Slider } from '@components';
 
 export const HomeClient = () => {
    return (
       <>
          <Slider />
+
+         <DiscountCode />
 
          {/* <Button className="rounded-lg">Click Me!!!</Button>
 
