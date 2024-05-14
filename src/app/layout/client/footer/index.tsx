@@ -13,7 +13,7 @@ export const Footer = () => {
                <LazyLoadingImage className="h-8 w-36" src={LOGO} alt="" />
             </Link>
             <div className="grid grid-cols-4">
-               <div className="col-span-4 md:col-span-1 md:pb-0 pb-4 md:border-none border-b border-solid border-[#eee]">
+               <div className="col-span-4 sm:col-span-2 lg:col-span-1 md:pb-0 pb-4 md:border-none border-b border-solid border-[#eee]">
                   <div className="text-sm text-black font-bold mt-7">Công ty Cổ phần 5S Fashion</div>
                   <div className="mt-2 flex flex-col gap-y-2">
                      <div className="text-sm text-black font-medium">Hotline: 18008118</div>
@@ -21,7 +21,7 @@ export const Footer = () => {
                      <div className="text-sm text-black font-medium">Email: cskh@5sfashion.vn</div>
                   </div>
                </div>
-               <div className="col-span-4 md:col-span-1 md:pb-0 pb-4 md:border-none border-b border-solid border-[#eee]">
+               <div className="col-span-4 sm:col-span-2 lg:col-span-1 md:pb-0 pb-4 md:border-none border-b border-solid border-[#eee]">
                   <div className="text-sm text-black font-bold mt-7">Về 5S Fashion</div>
                   <div className="mt-2">
                      <ul className="ml-2 flex flex-col gap-y-2">
@@ -37,7 +37,7 @@ export const Footer = () => {
                      </ul>
                   </div>
                </div>
-               <div className="col-span-4 md:col-span-1 md:pb-0 pb-4 md:border-none border-b border-solid border-[#eee]">
+               <div className="col-span-4 sm:col-span-2 lg:col-span-1 md:pb-0 pb-4 md:border-none border-b border-solid border-[#eee]">
                   <div className="text-sm text-black font-bold mt-7">Hỗ trợ khách hàng tại 5S Fashion</div>
                   <div className="mt-2">
                      <ul className="ml-2 flex flex-col gap-y-2">
