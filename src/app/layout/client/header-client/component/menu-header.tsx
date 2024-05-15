@@ -21,15 +21,17 @@ export const MenuHeader = ({ data }: MenuHeaderProps) => {
             {subMenu && <SvgIcon name="down-chevron" className="w-3 h-3" />}
          </Link>
          {subMenu && (
-            <div className="z-10 shadow-submenu p-6 absolute rounded-b-md top-[99%] hidden group-hover:block bg-white m-h-20  min-w-[400px] -left-10">
-               <div className="flex flex-col gap-y-2">
-                  {subMenu.map((item: any, index: number) => (
-                     <div key={index} className="">
-                        <Link to="/" className="hover:text-active">
-                           {item.name}
-                        </Link>
-                     </div>
-                  ))}
+            <div className="z-10 w-[500px] shadow-submenu p-8 absolute rounded-b-md top-[99%] border-t-[2px] border-solid border-[#c10516] hidden group-hover:block bg-white m-h-20 -left-10">
+               <div className="">
+                  <div className="grid grid-cols-2 gap-5">
+                     {subMenu.map((item: any, index: number) => (
+                        <div key={index} className="col-span-1 border-b border-b-[#ddd] pb-[10px]">
+                           <Link to="/" className="hover:text-active text-[#666666d9] font-medium">
+                              {item.name}
+                           </Link>
+                        </div>
+                     ))}
+                  </div>
                </div>
             </div>
          )}
