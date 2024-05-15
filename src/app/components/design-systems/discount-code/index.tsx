@@ -3,7 +3,7 @@ import { priceFormat } from '@helpers';
 
 export const DiscountCode = () => {
    return (
-      <div className="w-full max-w-[325px] mt-5">
+      <div className="w-full max-w-[325px] ">
          <div className="relative bg-[#fff4f4] border border-solid border-[hsla(0,64%,76%,.5)]  rounded-sm ml-4">
             <div className="absolute left-0 top-0 w-[0.3125rem] h-full">
                {/* <div
