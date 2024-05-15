@@ -1,4 +1,5 @@
 import { DiscountCode, Slider } from '@components';
+import { Product } from '@components/design-systems/product';
 
 export const HomeClient = () => {
    return (
@@ -6,6 +7,14 @@ export const HomeClient = () => {
          <Slider />
 
          <DiscountCode />
+
+         <div className="container mt-5">
+            <div className="grid grid-cols-5">
+               <div className="col-span-1">
+                  <Product />
+               </div>
+            </div>
+         </div>
 
          {/* <Button className="rounded-lg">Click Me!!!</Button>
 
